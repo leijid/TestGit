@@ -142,7 +142,7 @@ public class Test {
 	 */
 	private static SecretKeySpec getAESKeySpec(int keySize) throws Exception {
 		if ((keySize != 128) && (keySize != 192) && (keySize != 256)) {
-			throw new Exception("加密的keySize错误!");
+			throw new Exception("加密的keySize错误1!");
 		}
 		byte[] bytes = new byte[keySize / 8];
 		File f = new File(AES_KEY_FILE);
@@ -167,7 +167,7 @@ public class Test {
 			in = new FileInputStream(f);
 			in.read(bytes);
 		} catch (FileNotFoundException e) {
-			System.out.println("未找到AES加解密所需的KEY" + e);
+			System.out.println("未找到AES加解密所需的KEY2" + e);
 		} catch (IOException e) {
 			System.out.println("读取AES加解密所需的KEY失败" + e);
 		} finally {
