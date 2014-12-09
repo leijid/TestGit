@@ -41,7 +41,7 @@ public class Test {
 	private static final char PADDING_CHARACTER = '*';
 
 	public static void main(String[] args) {
-		byte[] encryptResult = encryptAES(addPadding("≤‚ ‘AES192º”√‹À„∑®", 16),
+		byte[] encryptResult = encryptAES(addPadding("≤‚ ‘AES192º”√‹À„∑®1", 16),
 		        AES_KEY_LENGTH);
 		System.out.println(parseByte2HexStr(encryptResult));
 		byte[] decryptResult = decryptAES(encryptResult, AES_KEY_LENGTH);
