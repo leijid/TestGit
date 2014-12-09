@@ -58,7 +58,7 @@ public class Test {
 			byte[] result = cipher.doFinal(byteContent);
 			return result;
 		} catch (Exception e) {
-			System.out.println("AESº”√‹ ß∞‹1" + e);
+			System.out.println("AESº”√‹ ß∞‹12" + e);
 		}
 		return null;
 	}
@@ -71,7 +71,7 @@ public class Test {
 			byte[] result = cipher.doFinal(content);
 			return result;
 		} catch (Exception e) {
-			System.out.println("AESΩ‚√‹ ß∞‹" + e);
+			System.out.println("AESΩ‚√‹ ß∞‹3" + e);
 		}
 		return null;
 	}
